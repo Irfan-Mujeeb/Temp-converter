@@ -1,0 +1,98 @@
+@font-face {
+    font-family: beverage;
+    src: url(LT\ Beverage.otf);
+}
+
+@font-face {
+    font-family: chilli;
+    src: url(Chilly-Medium.ttf);
+}
+
+body{
+    font-family: beverage;
+   background-color: beige;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weatherForm{
+    margin: 20px;
+}
+
+.cityInput{
+    width: 300px;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: beverage;
+}
+
+button[type="submit"]{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: hsl(90, 100%, 45%);
+    font-family: beverage;
+    font-size: 2rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+background-color: hsl(90, 100%, 30%);
+}
+
+.weatherCard{
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(180deg,hsl(240, 100%, 80%),hsl(39, 100%, 65%));
+    box-shadow: 7px 8px 8px darkslategrey;
+    border: none;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 3rem;
+    font-family: chilli;
+}
+p{
+font-size: 1.5rem;
+margin-top: 0;
+margin-bottom: 20px;
+}
+
+.cityDisplay, .TempDisplay{
+    font-size: 3rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.75);
+    margin-bottom: 25px;
+}
+
+.humidityDisplay{
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.descDisplay{
+    font-family: chilli;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+.weatherEmoji{
+    font-size: 3.5rem;
+    margin: 5px;
+}
+
+.ErrorDisplay{
+    font-size: 2.4rem;
+    color: rgb(247, 243, 243);
+    font-family: 'Consolas';
+}
